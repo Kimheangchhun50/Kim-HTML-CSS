@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Basic Layout</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .nv-area {
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: grey;
+    }
+
+    .content-sidebar-area {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: calc(100vh - (58px * 2));
+    }
+
+    .content-area {
+        padding: 20px;
+        width: 80%;
+        background-color: rgb(221, 221, 221);
+        position: relative;
+    }
+
+    .content-area p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .sidebar-area {
+        padding: 20px;
+        width: 20%;
+        background-color: lightblue;
+        position: relative;
+    }
+
+    .sidebar-area p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+
+    .footer-area {
+        padding: 20px;
+        color: white;
+        background-color: grey;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="nv-area">
+        <div class="nv-text">Header/Navigation Area</div>
+    </div>
+    <div class="content-sidebar-area">
+        <div class="content-area">
+            <p class="content">Content Area</p>
+        </div>
+        <div class="sidebar-area">
+            <p class="sidebar">Sidebar Area</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-area">Footer Area</div>
+    </footer>
+</body>
+
+</html>
