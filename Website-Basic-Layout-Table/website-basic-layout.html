@@ -33,7 +33,6 @@
     }
 
     .content-area p {
-        margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -49,7 +48,6 @@
     }
 
     .sidebar-area p {
-        margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -57,29 +55,32 @@
         transform: translate(-50%, -50%);
     }
 
-
     .footer-area {
         padding: 20px;
         color: white;
         background-color: grey;
         text-align: center;
     }
+
+    p {
+        margin: 0;
+    }
 </style>
 
 <body>
-    <div class="nv-area">
+    <header class="nv-area">
         <div class="nv-text">Header/Navigation Area</div>
-    </div>
-    <div class="content-sidebar-area">
+    </header>
+    <article class="content-sidebar-area">
         <div class="content-area">
-            <p class="content">Content Area</p>
+            <p class="content-text">Content Area</p>
         </div>
         <div class="sidebar-area">
-            <p class="sidebar">Sidebar Area</p>
+            <p class="sidebar-text">Sidebar Area</p>
         </div>
-    </div>
-    <footer>
-        <div class="footer-area">Footer Area</div>
+    </article>
+    <footer class="footer-area">
+        <p class="footer-text">Footer Area</div>
     </footer>
 </body>
 
