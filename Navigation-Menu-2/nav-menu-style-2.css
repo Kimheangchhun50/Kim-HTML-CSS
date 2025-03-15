@@ -65,7 +65,7 @@ body {
     position: absolute;
     right: 0;
     width: 15px;
-    bottom: 20px;
+    bottom: 22px;
 }
 
 .menu-have-sub:hover::after {
