@@ -5,18 +5,18 @@ h1 {
 .gallery {
     display: flex;
     justify-content: center;
-}
-
-.image {
-    margin: 10px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 img {
     display: block;
-    width: 150px;
+    width: calc((100% - 40px) / 4);
     height: 100px;
     object-fit: cover;
-    transition: 1s;
+    transition: 0.4s;
+    padding: 5px;
 }
 
 img:hover {
