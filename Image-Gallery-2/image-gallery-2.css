@@ -1,0 +1,27 @@
+.gallery-2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.col {
+    flex: 25%;
+    max-width: 25%;
+    margin: 5px;
+}
+
+.col img {
+    vertical-align: middle;
+    width: 100%;
+    margin: 5px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.col .half {
+    height: 75px;
+}
