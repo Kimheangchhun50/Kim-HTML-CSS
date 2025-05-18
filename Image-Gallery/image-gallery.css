@@ -25,7 +25,21 @@ img {
 }
 
 img:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .image {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .image {
+        width: 100%;
+    }
 }
